@@ -1,0 +1,12 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const express = require("express");
+const routes = express.Router();
+const validations_1 = require("../validations");
+const psicologo_controller_1 = require("../controllers/psicologo.controller");
+routes.get("/psicologos", psicologo_controller_1.PsicologoController.getAll);
+routes.get("/psicologos/:id", validations_1.PsicologoValidation.getOne, psicologo_controller_1.PsicologoController.getOne);
+routes.post("/psicologos", validations_1.PsicologoValidation.create, psicologo_controller_1.PsicologoController.create);
+routes.delete("/psicologos/:id", validations_1.PsicologoValidation.destroy, psicologo_controller_1.PsicologoController.delete);
+routes.put("/psicologos/:id", validations_1.PsicologoValidation.update, psicologo_controller_1.PsicologoController.update);
+module.exports = routes;
