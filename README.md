@@ -1,5 +1,5 @@
 # 💫 About Me:
-Im currently working on creating automations to make sales process easier, faster and more acurate.
+I'm currently inovating @ Fugro Brasil and being curious @ FIAP post graduation.
 
 
 ## 🌐 Socials:
